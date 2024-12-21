@@ -1,0 +1,23 @@
+img[class~="ratio-card-bg"]{
+   aspect-ratio: 16/9;
+}
+
+img[class~="ratio-card"] {
+  aspect-ratio: 1/1;
+}
+
+#banner-news{
+    display: block;
+}
+.nav-s-phone{
+    display: none;
+}
+
+@media screen and (max-width: 480px){
+  #banner-news {
+    display: none;
+  }
+  .nav-text{
+    display: none;
+  }
+}
