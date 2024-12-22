@@ -12,26 +12,26 @@ import 'uikit/dist/js/uikit.min.js';
 
 import { Routes } from './routes/main.js'
 
-window.addEventListener('load', () => {
+window.addEventListener('load', async () => {
   
   document.querySelector("#app").innerHTML = `
   <div class="container">
-    ${Routes({})}
+    ${await Routes({})}
   </div>
   `
 })
 
-window.addEventListener('hashchange', () => {
+window.addEventListener('hashchange', async () => {
   document.querySelector("#app").innerHTML = `
   <div class="container">
-    ${Routes({})}
+    ${await Routes({})}
   </div>
   `
 
-  setTimeout(() =>{
+  setTimeout(async () =>{
       const scroll = document.querySelector("body");
 
-      window.scrollTo({
+      await window.scrollTo({
         top: scroll.offsetTop,
         behavior: "smooth"
       })
