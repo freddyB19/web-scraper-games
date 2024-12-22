@@ -14,7 +14,7 @@ export const NotesSecondary = ({notes}) => {
 				<a href="${note.url}" class="link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover" target="_blank">Ver nota</a>
 			</article>
 
-			<hr class="mb-5">
+			<hr class="mb-5 opacity-100 border border-1">
 			`
 		).join('')}
 	</section>
