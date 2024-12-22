@@ -1,5 +1,7 @@
 import { NewsCurrentPage } from "@noticias/components/currentPage.js"
 
+import { UINewsMarca } from "./ui.js"
+
 
 const NewsMarca = ({news}) => {
 	return `
