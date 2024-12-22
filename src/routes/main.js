@@ -1,6 +1,8 @@
 import pages from  "@root/result.json"
 
 import { getHash } from "@root/utils/getHash.js"
+import { getData } from "@root/utils/getData.js"
+
 
 // Rutas
 import { Index, Header, Footer } from "@base/main.js"
@@ -50,15 +52,18 @@ const routes = {
   'elnacional_ia': ElNacionalIA,
 }
 
-export const Routes = ({}) => {
+export const Routes = async ({}) => {
+  const responsePages = await getData()
   const route = getHash()
 
+
   const renderHTML = routes[route] ? routes[route] : Error404
+  
   return `
-    ${Header({pages: pages})}
+    ${await Header({pages: responsePages})}
     <br><br>
-    ${renderHTML({pages: pages})}
+    ${await renderHTML({pages: responsePages})}
     <br><br>
-    ${Footer({})}
+    ${await Footer({})}
   `
 }
