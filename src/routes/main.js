@@ -1,5 +1,3 @@
-import pages from  "@root/result.json"
-
 import { getHash } from "@root/utils/getHash.js"
 import { getData } from "@root/utils/getData.js"
 
