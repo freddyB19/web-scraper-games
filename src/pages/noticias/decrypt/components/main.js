@@ -45,7 +45,7 @@ export const NotePrincipal = ({note}) => {
 	return `
 	<section class="mt-3 mb-4">
 		<article>
-			<div class="card text-bg-dark mb-3">
+			<div class="mb-3">
 			  <img src="${note.imagen}" class="ratio-card-bg card-img" width="100%" style="max-width: 100%;" alt="...">	
 			</div>
 			<span class="badge text-bg-secondary mb-3"><small>${note.fecha}</small></span>
