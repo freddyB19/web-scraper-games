@@ -66,16 +66,20 @@ const CommingSoon = ({news}) => {
 						    </thead>
 						    <tbody>
 								<tr>
-								${note.plataformas.map( data =>
-								`
-									<td><a href="${data.url}">${data.tipo}</a></td>
-								` 
-								).join('')}
-								${note.genero.map( data =>
-								`
-									<td><a href="${data.url}">${data.genero}</a></td>
-								` 
-								).join('')}
+									<td>
+									${note.plataformas.map( data =>
+									`
+										<a href="${data.url}"><span class="badge rounded-pill text-bg-primary">${data.tipo}</span></a>
+									` 
+									).join('')}
+									</td>
+									<td>
+									${note.genero.map( data =>
+									`
+										<a href="${data.url}"><span class="badge text-bg-success">${data.genero}</span></a>
+									` 
+									).join('')}
+									</td>
 								</tr>
 						    </tbody>
 						</table>
