@@ -19,12 +19,12 @@ export const MainNews = ({ noticias }) => {
     return `
 	<main class="mb-4">
 		<div class="row g-5 mb-5">
-			<section class="col-md-${(!has_pages) ? `12` : `8` }">
+			<section class="col-md-${(has_pages) ? `12` : `8` }">
 				${ MainPrincipal({note: principal}) }
 			</section>
 			
 			${
-				(!has_pages)
+				(has_pages)
 				? ``
 				: `
 					<section class="col-md-4">
