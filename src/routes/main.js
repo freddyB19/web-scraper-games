@@ -57,8 +57,7 @@ const routes = {
 }
 
 export const Routes = async ({}) => {
-    /*const responsePages = await getData()*/
-    const responsePages = data_json.default
+    const responsePages = await getData()
     const route = getHash()
 
     const renderHTML = routes[route] ? routes[route] : Error404
