@@ -1,5 +1,5 @@
-export const UIBaseEasportUpdate = ({note}) => {
-	return `
+export const UIBaseEasportUpdate = ({ note }) => {
+    return `
 	<article>
 		<div class="card shadow-sm h-100">
 			<div class="card-header">
@@ -18,12 +18,12 @@ export const UIBaseEasportUpdate = ({note}) => {
 					}
 				</h5>
 				
-				<p class="d-flex flex-row justify-content-between mt-3">
-					<span class="badge text-bg-info">
+				<p class="d-flex flex-column justify-content-md-between justify-content-around align-items-center mt-3">
+					<span class="badge text-bg-info mb-3">
 						${note.info[0].informacion[0]}
 					</span>
 					
-					<a class="link-primary link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover" href="${note.info[0].url}" target="_blank">Ver</a>
+					<a class="mb-3 link-primary link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover" href="${note.info[0].url}" target="_blank">Ver</a>
 					
 					${
 						(note.info[0].informacion.length == 2)
