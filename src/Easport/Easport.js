@@ -12,7 +12,7 @@ export const Easport = ({ pages }) => {
     const easport = pages.find(page => page.pagina.nombre == 'easport')
 
     return `
-		${CurrentPage({logo: easportLogo, logo_w: "100", page: "Easport"})}
+		${CurrentPage({logo: easportLogo, logo_w: "100", page: "Easports"})}
 
 		${EasportNav({})}
 		
