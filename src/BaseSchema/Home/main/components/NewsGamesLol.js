@@ -24,9 +24,11 @@ const NotesGamesLol = ({ notes }) => {
 }
 
 
-export const NewsGamesLol = ({ note, notes }) => {
-    if (!note)
+export const NewsGamesLol = ({ news, notes }) => {
+    if (!news)
         return ``
+
+    const note = news[0]
 
     const dateNoticia = new Date(note.fecha)
     const size_logo = (screen.width <= values.MaxWidth) ? values.SizeSmall_LolLogo_lol3 : values.SizeBig_LolLogo_lol3
