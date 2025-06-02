@@ -33,8 +33,6 @@ import { DecryptIA } from "@root/Noticias/pages/decrypt/DecryptIA.js"
 import { ElNacionalIA } from "@root/Noticias/pages/elnacional/ElNacionalIA.js"
 import { ElNacionalTech } from "@root/Noticias/pages/elnacional/ElNacionalTech.js"
 
-import * as data_json from "@root/result.json"
-
 const routes = {
     "/": Home,
     "lol": LOL,
